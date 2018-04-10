@@ -17,11 +17,19 @@ function submitIt() {
   });
 }
 
+function pressIt() {
+  $('#typing').on('keydown', function(event) {
+    if (event.which === 71) {
+      alert('g was pressed');
+    }
+  });
+}
+
 $(document).ready(function(){
 
 // call functions here
 getIt();
 frameIt();
 submitIt();
-
+pressIt();
 });
