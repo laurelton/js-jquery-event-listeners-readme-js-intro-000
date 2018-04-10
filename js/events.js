@@ -5,7 +5,7 @@ function getIt() {
   });
 }
 
-let frameIt = function () {
+funciton frameIt () {
   $('img').on('load', function () {
     this.addClass('tasty');
   })
