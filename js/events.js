@@ -5,9 +5,16 @@ function getIt() {
   });
 }
 
+let frameIt = function () {
+  $('img').on('load', function () {
+    this.addClass('tasty');
+  })
+};
+
 $(document).ready(function(){
 
 // call functions here
 getIt();
 
 });
+
